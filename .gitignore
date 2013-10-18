@@ -3,7 +3,7 @@
 #################
 
 *.pdf
-*.gz
+*.synctex.gz
 
 *.pydevproject
 .project
