@@ -3,6 +3,7 @@
 #################
 
 *.pdf
+*.gz
 
 *.pydevproject
 .project
