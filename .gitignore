@@ -2,6 +2,8 @@
 ## Eclipse
 #################
 
+*.pdf
+
 *.pydevproject
 .project
 .metadata
