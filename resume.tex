@@ -1,7 +1,8 @@
 % LaTeX file for resume 
 % This file uses the resume document class (res.cls)
 
-\documentclass[margin]{res} 
+\documentclass[margin]{res}
+\usepackage{hyperref}
 % the margin option causes section titles to appear to the left of body text 
 \textwidth=5.2in % increase textwidth to get smaller right margin
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
@@ -14,22 +15,24 @@
 %\section{Objective} 
 %Inference and Optimization under Uncertainty
 
-%\section{Personal Information}
-%{\bf email} ngyeesian\@gmail.com \\
-%{\bf phone} (65)90694192 \\
-%{\bf website} https://github.com/yeesian \\
+\section{Personal Information}
+\begin{tabular}{r l}
+{\bf email} & \href{mailto:ngyeesian@gmail.com}{ngyeesian@gmail.com} \\
+{\bf phone} & (+65) 90694192 \\
+{\bf website} & \url{https://github.com/yeesian} \\
+\end{tabular}
 %https://www.or-exchange.org/users/737/yeesian/
 
 \section{Education} 
 {\bf National University of Singapore}  \hfill \textit{Aug 2010 - May 2014 (Expected)} \\
-\textit{B.Eng.} Industrial and Systems, Cumulative Average Point: 4.65/5.0 (1st class Hons.) \\
+\textit{B.Eng.} Industrial and Systems, Cumulative Average Point: 4.63/5.0 (1st class Hons.) \\
 \textit{B.Comp.} Computer Science, Cumulative Average Point: 4.78/5.0 (1st class Hons.)
 
 {\bf Georgia Institute of Technology}  \hfill \textit{Jan - May 2013}\\
 \textit{Relevant Classes:} Regression, Forecasting and Time Series, Linear Optimization \\
 \textit{Classes Audited:} Discrete Optimization
 
-\section{Research Experience}
+\section{Working Experience}
 {\bf Research Assistant,} Singapore-MIT Alliance \hfill \textit{Aug 2013 - May 2014 (Expected)}
 \begin{itemize} \itemsep -2pt  % reduce space between items
 \item Ported robust optimization code from 32- to 64-bit platform onto a remote server
@@ -45,14 +48,14 @@
 {\bf Undergrad Researcher,} National University of Singapore \hfill \textit{May - Jul 2012}
 \begin{itemize} \itemsep -2pt
 \item Department: Decision Sciences, School of Business
-\item Wrote Python scripts to generate cutting-planes (through the CPLEX API) for robust vehicle routing using entropic risk functionals.
+\item Wrote Python scripts for robust vehicle routing under uncertainty
 \end{itemize}
 
 \section{Teaching Experience}
 {\bf Teaching Assistant,} Programming Methodology in Python \hfill \textit{Aug - Dec 2013}
 \begin{itemize} \itemsep -2pt
-\item Emphasis on functional programming and higher order abstractions
-\item Pioneering an initiative to push classroom teaching onto online platforms
+\item Pioneered an initiative to push classroom teaching onto online platforms
+\item Teaching Rating: 4.83/5.0 (Faculty Average: 4.12)
 \end{itemize}
 
 {\bf Teaching Assistant,} Programming Methodology in C \hfill \textit{Aug - Dec 2011}
@@ -65,7 +68,7 @@
 {\bf Thesis,} Robust Ambulance Location Problem \hfill \textit{Aug 2013 - May 2014 (Expected)}
 \begin{itemize} \itemsep -2pt
 \item Joint collaboration with Singapore General Hospital and the Civil Defence Force
-\item Modeling and comparison of different policies for deployment of ambulances in two-stage optimization problems
+\item Analysed policies for ambulance deployment in Singapore with actionable insights
 \end{itemize}
 
 {\bf Systems Design,} Logistical Design for the Police Force \hfill \textit{Aug 2013 - May 2014}
@@ -76,7 +79,7 @@
 
 {\bf Simulation,} Modeling Passenger Loads on the Railway System \hfill \textit{Aug - Nov 2012}
 \begin{itemize} \itemsep -2pt
-\item Analyzed public transit information from the Land Transport Authority, fitting and diagnosing parametric models of passenger arrival timings
+\item Analyzed public transit data from the Singapore Land Transport Authority
 \item Developed a discrete-event simulation in AutoMod for the railway system
 \end{itemize}
 
